@@ -6,7 +6,7 @@ html, body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 2em;
   font-weight: 300;
   color: #777;
   background-color: #fff !important;
@@ -30,6 +30,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #646464;
   margin-top: 0;
+}
+
+h2 {
+  font-size: 2em;
+
+}
+
+h3 {
+  font-size: 2em;
 }
 
 .logo-main {
@@ -5226,7 +5235,7 @@ img.mfp-img {
 }
 @media screen and (max-width: 480px) {
   .hero-unit .hero-content .hero-text .hero-heading {
-    font-size: 2em;
+    font-size: 4em;
   }
 }
 .hero-unit .hero-content .hero-text p {
