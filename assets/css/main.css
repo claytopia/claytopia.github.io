@@ -26,7 +26,9 @@ body.fullscreen-image-background {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Dosis", sans-serif;
+  font-family_: "Dosis", sans-serif;
+  font-family: 'Amatic SC', cursive;
+
   font-weight: 300;
   color: #646464;
   margin-top: 0;
@@ -271,7 +273,9 @@ a:hover, a:focus {
   margin-bottom: 50px;
 }
 .section-heading h2, .section-heading p {
-  font-family: "Dosis", sans-serif;
+  font-family_: "Dosis", sans-serif;
+  font-family: 'Amatic SC', cursive;
+
 }
 .section-heading h2 {
   font-size: 3em;
@@ -337,7 +341,9 @@ body #jprePercentage {
   top: -80px;
   font-size: 48px;
   font-weight: normal;
-  font-family: "Dosis", sans-serif;
+  font-family_: "Dosis", sans-serif;
+  font-family: 'Amatic SC', cursive;
+
   text-shadow: none;
   color: #777;
 }
@@ -5221,7 +5227,9 @@ img.mfp-img {
 }
 .hero-unit .hero-content .hero-text .hero-heading,
 .hero-unit .hero-content .hero-text p {
-  font-family: "Dosis", sans-serif;
+  font-family_: "Dosis", sans-serif;
+  font-family: 'Amatic SC', cursive;
+
   color: #DDDDDD;
   font-weight: 300;
 }
@@ -5877,7 +5885,9 @@ img.mfp-img {
 .testimonial .testimonial-text {
   margin-bottom: 30px;
   font-size: 3em;
-  font-family: "Dosis", sans-serif;
+  font-family_: "Dosis", sans-serif;
+  font-family: 'Amatic SC', cursive;
+
 }
 @media screen and (max-width: 480px) {
   .testimonial .testimonial-text {
