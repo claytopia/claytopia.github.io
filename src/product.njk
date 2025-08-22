@@ -1,0 +1,174 @@
+---
+pagination:
+  data: products
+  size: 1
+  alias: product
+permalink: "shop/product/{{ product.slug }}/index.html"
+layout: layout.njk
+eleventyComputed:
+  title: "{{ product.title }} - ClayToPia Shop"
+---
+
+<div id="main-content" class="main-content">
+
+    <div id="product-detail" class="section product-detail">
+        <div class="container">
+            <div class="section-heading">
+                <h2>{{ product.title | upper }}</h2>
+                <hr/>
+                <p class="text-center">{{ product.leadDescription }}</p>
+            </div>
+            <div class="section-content">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="product-images">
+                            <img src="{{ product.images.detail }}" alt="{{ product.title }}" class="img-responsive" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                            
+                            {% if product.images.gallery %}
+                            <div class="row">
+                                {% for image in product.images.gallery %}
+                                <div class="col-xs-4">
+                                    <img src="{{ image }}" alt="{{ product.title }} Bild {{ loop.index }}" class="img-responsive thumbnail-img">
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="product-details">
+                            <h3>{{ product.title }}</h3>
+                            <div class="product-price" style="margin: 20px 0;">
+                                <span class="price-large">{{ product.currency }}{{ product.price | replace(".", ",") }}</span>
+                                {% if product.featured and product.badge %}
+                                <div class="product-badge" style="display: inline-block; background-color: #c09853; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px; margin-left: 10px;">
+                                    {{ product.badge }}
+                                </div>
+                                {% endif %}
+                            </div>
+                            
+                            <div class="product-description">
+                                <p class="lead">{{ product.leadDescription }}</p>
+                                
+                                <p>{{ product.description }}</p>
+                            </div>
+                            
+                            <div class="product-features">
+                                <h4>{% if product.slug == "schnuppertoepfern" %}Das erwartet dich:{% else %}Das ist enthalten:{% endif %}</h4>
+                                <ul class="features-list">
+                                    {% for feature in product.features %}
+                                    <li> {{ feature }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            
+                            <div class="product-actions" style="margin-top: 30px;">
+                                <a href="{{ product.stripePaymentLink }}" class="btn btn-primary btn-lg btn-block">
+                                    {% if product.slug == "schnuppertoepfern" %}
+                                    <i class="fa fa-calendar"></i>
+                                    {% else %}
+                                    <i class="fa fa-shopping-cart"></i>
+                                    {% endif %}
+                                    {{ product.buttonText | default("Jetzt kaufen") }}
+                                </a>
+                                <p class="text-center" style="margin-top: 10px; font-size: 12px; color: #666;">
+                                    Sichere Bezahlung über Stripe
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Information -->
+                {% if product.infoBoxes %}
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-12">
+                        <div class="product-tabs">
+                            <div class="row">
+                                {% for infoBox in product.infoBoxes %}
+                                <div class="col-md-4">
+                                    <div class="info-box">
+                                        <i class="fa {{ infoBox.icon }}" style="font-size: 24px; color: #c09853; margin-bottom: 10px;"></i>
+                                        <h4>{{ infoBox.title }}</h4>
+                                        <p>{{ infoBox.content }}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+                <!-- Learning Points (for Schnuppertöpfern) -->
+                {% if product.learningPoints %}
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div style="background-color: #f8f8f8; padding: 30px; border-radius: 8px;">
+                            <h3>{{ product.learningPoints.title }}</h3>
+                            <div class="row" style="margin-top: 20px;">
+                                <div class="col-md-6">
+                                    <ul class="learn-list">
+                                        {% for item in product.learningPoints.left %}
+                                        <li><i class="fa fa-check"></i> {{ item }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="learn-list">
+                                        {% for item in product.learningPoints.right %}
+                                        <li><i class="fa fa-check"></i> {{ item }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <p style="margin-top: 20px; text-align: center;">
+                                <strong>{{ product.learningPoints.highlight }}</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+                <!-- Expectation (for Clay Club cards) -->
+                {% if product.expectation %}
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div style="background-color: #f8f8f8; padding: 30px; border-radius: 8px; text-center;">
+                            <h3>{{ product.expectation.title }}</h3>
+                            <p>{{ product.expectation.content | replace('|', '</p><p>') | safe }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+                <!-- Additional Sections -->
+                {% if product.additionalSections %}
+                {% for section in product.additionalSections %}
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div style="{{ section.style }} padding: 20px; border-radius: 8px; text-center;">
+                            <h4><i class="fa {{ section.icon }}"></i> {{ section.title }}</h4>
+                            <p>{{ section.content | safe }}</p>
+                            {% if section.link %}
+                            <a href="{{ section.link.url }}" class="btn btn-outline">{{ section.link.text }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+                
+                <!-- Back to Shop -->
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-12 text-center">
+                        <a href="/shop" class="btn btn-outline">← Zurück zum Shop</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+---
+layout: layout.njk
+title: Clay Club 10er Karte - ClayToPia Shop
+---
+
+<div id="main-content" class="main-content">
+
+    <div id="product-detail" class="section product-detail">
+        <div class="container">
+            <div class="section-heading">
+                <h2>CLAY CLUB 10ER KARTE</h2>
+                <hr/>
+                <p class="text-center">Dein Einstieg in die regelmäßige Töpfer-Praxis</p>
+            </div>
+            <div class="section-content">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="product-images">
+                            <img src="/assets/img/shop/10er-karte-detail.jpg" alt="Clay Club 10er Karte" class="img-responsive" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                            
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="/assets/img/clayclub/20250521_132310.jpg" alt="Clay Club Atmosphäre" class="img-responsive thumbnail-img">
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="/assets/img/clayclub/20250606_003330.jpg" alt="Gemeinsames Arbeiten" class="img-responsive thumbnail-img">
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="/assets/img/clayclub/20250706_011328.jpg" alt="Kreative Ergebnisse" class="img-responsive thumbnail-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="product-details">
+                            <h3>Clay Club 10er Karte</h3>
+                            <div class="product-price" style="margin: 20px 0;">
+                                <span class="price-large">€89,00</span>
+                            </div>
+                            
+                            <div class="product-description">
+                                <p class="lead">Mit der 10er Karte bist du Stammgast im Clay Club und profitierst von unserem besten Preis-Leistungs-Verhältnis.</p>
+                                
+                                <p>Perfect für alle, die regelmäßig töpfern möchten und ihre Fähigkeiten kontinuierlich weiterentwickeln wollen. Du lernst verschiedene Techniken kennen und hast genug Zeit, um eigene Projekte umzusetzen.</p>
+                            </div>
+                            
+                            <div class="product-features">
+                                <h4>Das ist enthalten:</h4>
+                                <ul class="features-list">
+                                    <li><i class="fa fa-check"></i> 10 Besuche im Clay Club</li>
+                                    <li><i class="fa fa-check"></i> Alle Materialien und Werkzeuge</li>
+                                    <li><i class="fa fa-check"></i> Ton für deine Projekte</li>
+                                    <li><i class="fa fa-check"></i> Glasuren nach Wahl</li>
+                                    <li><i class="fa fa-check"></i> Brennkosten inklusive</li>
+                                    <li><i class="fa fa-check"></i> Persönliche Betreuung</li>
+                                    <li><i class="fa fa-check"></i> 6 Monate Gültigkeit</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="product-actions" style="margin-top: 30px;">
+                                <a href="#" class="btn btn-primary btn-lg btn-block">
+                                    <i class="fa fa-shopping-cart"></i> Jetzt kaufen - €89,00
+                                </a>
+                                <p class="text-center" style="margin-top: 10px; font-size: 12px; color: #666;">
+                                    Sichere Bezahlung über Stripe
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Information -->
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-12">
+                        <div class="product-tabs">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="info-box">
+                                        <i class="fa fa-clock-o" style="font-size: 24px; color: #c09853; margin-bottom: 10px;"></i>
+                                        <h4>Öffnungszeiten</h4>
+                                        <p>Clay Club findet jeden [Tag] von [Zeit] bis [Zeit] statt. Du kannst flexibel kommen und gehen.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info-box">
+                                        <i class="fa fa-calendar" style="font-size: 24px; color: #c09853; margin-bottom: 10px;"></i>
+                                        <h4>Gültigkeit</h4>
+                                        <p>Die 10er Karte ist 6 Monate ab Kaufdatum gültig. Du kannst die Termine flexibel nutzen.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info-box">
+                                        <i class="fa fa-users" style="font-size: 24px; color: #c09853; margin-bottom: 10px;"></i>
+                                        <h4>Für wen geeignet</h4>
+                                        <p>Perfekt für Anfänger und Fortgeschrittene, die regelmäßig töpfern möchten.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- What to expect -->
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div style="background-color: #f8f8f8; padding: 30px; border-radius: 8px; text-center;">
+                            <h3>Was dich erwartet</h3>
+                            <p>Im Clay Club arbeitest du in entspannter Atmosphäre an deinen eigenen Projekten. Unsere erfahrenen Töpfer stehen dir mit Rat und Tat zur Seite, wenn du Fragen hast oder neue Techniken lernen möchtest.</p>
+                            <p>Du triffst auf Gleichgesinnte, könnt euch austauschen und voneinander lernen. Egal ob du Schalen, Tassen, Vasen oder ganz andere Objekte töpfern möchtest - deiner Kreativität sind keine Grenzen gesetzt.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Back to Shop -->
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-12 text-center">
+                        <a href="/shop" class="btn btn-outline">← Zurück zum Shop</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

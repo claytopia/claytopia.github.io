@@ -1,0 +1,198 @@
+[
+  {
+    "slug": "10er-karte",
+    "title": "Clay Club 10er Karte",
+    "shortDescription": "10 Besuche im Clay Club für regelmäßige Töpfer-Sessions",
+    "price": 200.00,
+    "currency": "€",
+    "featured": false,
+    "badge": null,
+    "leadDescription": "Mit der 10er Karte bist du Stammgast im Clay Club und profitierst von unserem besten Preis-Leistungs-Verhältnis.",
+    "description": "Perfect für alle, die regelmäßig töpfern möchten und ihre Fähigkeiten kontinuierlich weiterentwickeln wollen. Du lernst verschiedene Techniken kennen und hast genug Zeit, um eigene Projekte umzusetzen.",
+    "features": [
+      "10 Besuche im Clay Club",
+      "Alle Materialien und Werkzeuge",
+      "Ton für deine Projekte",
+      "Glasuren nach Wahl",
+      "6 Monate Gültigkeit"
+    ],
+    "images": {
+      "main": "/assets/img/shop/10er-karte.jpg",
+      "detail": "/assets/img/shop/10er-karte-detail.jpg",
+      "gallery": [
+        "/assets/img/clayclub/20250521_132310.jpg",
+        "/assets/img/clayclub/20250606_003330.jpg",
+        "/assets/img/clayclub/20250706_011328.jpg"
+      ]
+    },
+    "infoBoxes": [
+      {
+        "icon": "fa-clock-o",
+        "title": "Öffnungszeiten",
+        "content": "Clay Club findet jeden [Tag] von [Zeit] bis [Zeit] statt. Du kannst flexibel kommen und gehen."
+      },
+      {
+        "icon": "fa-calendar",
+        "title": "Gültigkeit",
+        "content": "Die 10er Karte ist 6 Monate ab Kaufdatum gültig. Du kannst die Termine flexibel nutzen."
+      },
+      {
+        "icon": "fa-users",
+        "title": "Für wen geeignet",
+        "content": "Perfekt für Anfänger und Fortgeschrittene, die regelmäßig töpfern möchten."
+      }
+    ],
+    "expectation": {
+      "title": "Was dich erwartet",
+      "content": "Im Clay Club arbeitest du in entspannter Atmosphäre an deinen eigenen Projekten. Unsere erfahrenen Töpfer stehen dir mit Rat und Tat zur Seite, wenn du Fragen hast oder neue Techniken lernen möchtest.|Du triffst auf Gleichgesinnte, könnt euch austauschen und voneinander lernen. Egal ob du Schalen, Tassen, Vasen oder ganz andere Objekte töpfern möchtest - deiner Kreativität sind keine Grenzen gesetzt."
+    },
+    "buttonIcon": "fa-shopping-cart",
+    "stripePaymentLink": "https://buy.stripe.com/5kQfZibX79BN7dZ4JA3ks00"
+  },
+  {
+    "slug": "5er-karte",
+    "title": "Clay Club 5er Karte",
+    "shortDescription": "5 Besuche im Clay Club - perfekt zum Ausprobieren",
+    "price": 120,
+    "currency": "€",
+    "featured": false,
+    "badge": null,
+    "leadDescription": "Die 5er Karte ist ideal, um den Clay Club kennenzulernen und erste Töpfer-Erfahrungen zu sammeln.",
+    "description": "Perfect für Einsteiger oder als Geschenk für töpferbegeisterte Freunde. Du hast genug Zeit, um verschiedene Techniken auszuprobieren und zu entscheiden, ob das regelmäßige Töpfern das Richtige für dich ist.",
+    "features": [
+      "5 Besuche im Clay Club",
+      "Alle Materialien und Werkzeuge",
+      "Ton für deine Projekte",
+      "Glasuren nach Wahl",
+      "Persönliche Betreuung",
+      "3 Monate Gültigkeit"
+    ],
+    "images": {
+      "main": "/assets/img/shop/5er-karte.jpg",
+      "detail": "/assets/img/shop/5er-karte-detail.jpg",
+      "gallery": [
+        "/assets/img/clayclub/20250521_132343.jpg",
+        "/assets/img/clayclub/20250601_170257.jpg",
+        "/assets/img/clayclub/20250606_003330.jpg"
+      ]
+    },
+    "infoBoxes": [
+      {
+        "icon": "fa-clock-o",
+        "title": "Öffnungszeiten",
+        "content": "Clay Club findet jeden [Tag] von [Zeit] bis [Zeit] statt. Flexibler Einstieg möglich."
+      },
+      {
+        "icon": "fa-calendar",
+        "title": "Gültigkeit",
+        "content": "Die 5er Karte ist 6 Monate ab Kaufdatum gültig. Perfekt für einen ersten Test."
+      },
+      {
+        "icon": "fa-heart",
+        "title": "Geschenkidee",
+        "content": "Ein wunderbares Geschenk für alle, die gerne kreativ sind und Neues ausprobieren."
+      }
+    ],
+    "expectation": {
+      "title": "Perfekt für Einsteiger",
+      "content": "Die 5er Karte gibt dir die Möglichkeit, den Clay Club in Ruhe kennenzulernen. Du kannst verschiedene Techniken ausprobieren, ohne dich gleich langfristig festzulegen.|Unsere erfahrenen Töpfer helfen dir bei den ersten Schritten und zeigen dir, wie vielfältig und entspannend das Arbeiten mit Ton sein kann. Nach den 5 Besuchen weißt du sicher, ob du dabei bleiben möchtest!"
+    },
+    "additionalSections": [
+      {
+        "type": "upgrade-tip",
+        "title": "Tipp: Upgrade zur 10er Karte",
+        "content": "Du bist begeistert und möchtest weitermachen? Kein Problem! Du kannst jederzeit zur 10er Karte upgraden und profitierst von noch besseren Konditionen.",
+        "icon": "fa-lightbulb-o",
+        "style": "background-color: #e8f5e8; border: 2px solid #c09853;"
+      }
+    ],
+    "buttonText": "Jetzt kaufen",
+    "buttonIcon": "fa-shopping-cart",
+    "stripePaymentLink": "https://buy.stripe.com/deine-5er-karte-link"
+  },
+  {
+    "slug": "schnuppertoepfern",
+    "title": "Schnuppertöpfern",
+    "shortDescription": "Dein erster Schritt in die Welt des Töpferns",
+    "price": 25.00,
+    "currency": "€",
+    "featured": false,
+    "badge": null,
+    "leadDescription": "Der perfekte Einstieg für alle, die schon immer mal töpfern wollten! In 2 entspannten Stunden lernst du die Grundlagen kennen. Du kannst bis zu zwei Schnuppertermine buchen.",
+    "description": "Du bekommst eine persönliche Einführung in die Töpferei, arbeitest mit deinen eigenen Händen und erschaffst bereits in der ersten Stunde dein erstes kleines Kunstwerk. Keine Vorkenntnisse erforderlich! Du kannst bis zu zwei Schnuppertermine buchen, um noch tiefer in die Töpferei einzusteigen.",
+    "features": [
+      "2 Stunden intensiver Workshop",
+      "Persönliche 1:1 Betreuung",
+      "Alle Materialien inklusive",
+      "Grundlagen der Töpferei",
+      "Dein erstes eigenes Werkstück",
+      "Brennen & Glasieren inklusive",
+      "Abholung nach 1-2 Wochen"
+    ],
+    "images": {
+      "main": "/assets/img/shop/schnuppertoepfern.jpg",
+      "detail": "/assets/img/shop/schnuppertoepfern-detail.jpg",
+      "gallery": [
+        "/assets/img/portfolio/work1.jpg",
+        "/assets/img/portfolio/work2.jpg",
+        "/assets/img/portfolio/work3.jpg"
+      ]
+    },
+    "infoBoxes": [
+      {
+        "icon": "fa-clock-o",
+        "title": "Dauer & Termine",
+        "content": "2 Stunden Workshop nach individueller Terminabsprache. Auch am Wochenende möglich."
+      },
+      {
+        "icon": "fa-user",
+        "title": "Teilnehmer",
+        "content": "Einzeltermin oder mit Partner/Freundin. Maximal 2 Personen für intensive Betreuung."
+      },
+      {
+        "icon": "fa-gift",
+        "title": "Geschenkgutschein",
+        "content": "Auch als Gutschein erhältlich - das perfekte Geschenk für kreative Menschen."
+      }
+    ],
+    "learningPoints": {
+      "title": "Was du lernen wirst",
+      "left": [
+        "Grundlagen des Töpferns",
+        "Ton richtig vorbereiten",
+        "Einfache Aufbautechnik",
+        "Formen und Gestalten"
+      ],
+      "right": [
+        "Oberflächen bearbeiten",
+        "Werkzeuge kennenlernen",
+        "Glasur auswählen",
+        "Tipps für zu Hause"
+      ],
+      "highlight": "Nach 2 Stunden hast du bereits dein erstes kleines Meisterwerk geschaffen!"
+    },
+    "additionalSections": [
+      {
+        "type": "gift-highlight",
+        "title": "Das perfekte Geschenk",
+        "content": "Suchst du nach einem besonderen Geschenk? Der Schnuppertöpfern-Workshop ist ideal für alle, die gerne kreativ sind und Neues ausprobieren möchten. Wir stellen gerne einen Geschenkgutschein aus!",
+        "icon": "fa-gift",
+        "style": "background-color: #fff3cd; border: 2px solid #c09853;"
+      },
+      {
+        "type": "next-steps",
+        "title": "Und danach?",
+        "content": "Hat dir das Schnuppertöpfern gefallen? Dann ist unser <strong>Clay Club</strong> perfekt für dich! Komm regelmäßig vorbei und entwickle deine Fähigkeiten weiter.",
+        "icon": "fa-arrow-right",
+        "style": "background-color: #e8f5e8;",
+        "link": {
+          "text": "Mehr zum Clay Club",
+          "url": "/der-clay-club"
+        }
+      }
+    ],
+    "buttonText": "Termin buchen",
+    "buttonIcon": "fa-calendar",
+    "stripePaymentLink": "https://buy.stripe.com/deine-schnuppertoepfern-link"
+  }
+]

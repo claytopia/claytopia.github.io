@@ -1,0 +1,87 @@
+---
+layout: layout.njk
+title: Shop - ClayToPia
+permalink: /shop/index.html
+activeNav: shop
+---
+
+<div id="main-content" class="main-content">
+
+    <div id="shop" class="section shop">
+        <div class="container">
+            <div class="section-heading">
+                <h2>SHOP</h2>
+                <hr/>
+                <p class="text-center">Entdecke unsere Angebote für deinen perfekten Töpfer-Einstieg</p>
+            </div>
+            <div class="section-content">
+                
+                <!-- Products Grid -->
+                <div class="row">
+                    {% for product in products %}
+                    <!-- {{ product.title }} -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-card{% if product.featured %} featured{% endif %}">
+                            {% if product.badge %}
+                            <div class="product-badge">{{ product.badge }}</div>
+                            {% endif %}
+                            <div class="product-image">
+                                <img src="{{ product.images.main }}" alt="{{ product.title }}" class="img-responsive">
+                                <div class="product-overlay">
+                                    <a href="/shop/{{ product.slug }}" class="btn btn-white">Details ansehen</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>{{ product.title }}</h3>
+                                <p class="product-description">{{ product.shortDescription }}</p>
+                                <div class="product-price">
+                                    <span class="price">{{ product.currency }}{{ product.price | replace(".", ",") }}</span>
+                                </div>
+                                <div class="product-features">
+                                    <ul>
+                                        {% for feature in product.features %}{% if loop.index <= 3 %}
+                                        <li>{{ feature }}</li>
+                                        {% endif %}{% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="{{ product.stripePaymentLink }}" class="btn btn-primary btn-block">{{ product.buttonText  | default("Kaufen") }}</a>
+                                    <a href="/shop/product/{{ product.slug }}" class="btn btn-outline btn-block">Mehr Informationen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+                
+                <!-- Shop Info -->
+                <div class="row" style="margin-top: 60px;">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div style="background-color: #f8f8f8; padding: 30px; border-radius: 8px;">
+                            <h3>Warum ClayToPia?</h3>
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-4">
+                                    <i class="fa fa-heart" style="font-size: 24px; color: #c09853; margin-bottom: 15px;"></i>
+                                    <h4>Persönliche Betreuung</h4>
+                                    <p>Individuelle Unterstützung für jeden Teilnehmer</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <i class="fa fa-users" style="font-size: 24px; color: #c09853; margin-bottom: 15px;"></i>
+                                    <h4>Tolle Gemeinschaft</h4>
+                                    <p>Lerne andere Töpferbegeisterte kennen</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <i class="fa fa-star" style="font-size: 24px; color: #c09853; margin-bottom: 15px;"></i>
+                                    <h4>Hochwertige Ausstattung</h4>
+                                    <p>Professionelle Werkzeuge und Materialien</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
