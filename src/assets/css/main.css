@@ -22,9 +22,9 @@ body {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   body {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 }
 
