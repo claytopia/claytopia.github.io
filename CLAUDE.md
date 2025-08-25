@@ -13,6 +13,7 @@ This is an Eleventy-based static site for Claytopia, featuring a pottery/ceramic
 ## Key Files
 
 - `src/index.html` - Main homepage
+- `src/assets/css/main.css` - Most important CSS Styles
 - `src/brennservice.md` - Firing service content
 - `src/brennservice2.html` - Additional firing service page
 - `src/workshops.html` - Workshop information
