@@ -4873,14 +4873,16 @@ img.mfp-img {
 .hero-unit .hero-content .hero-text .hero-heading {
   font-size: 6em;
 }
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 991px) {
   .hero-unit .hero-content .hero-text .hero-heading {
     font-size: 4em;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero-unit .hero-content .hero-text .hero-heading {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 .hero-unit .hero-content .hero-text p {
