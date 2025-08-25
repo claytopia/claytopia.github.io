@@ -402,6 +402,7 @@ body.fullscreen-image-background .light-nav > li.active > a {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
+/*
 .navbar.navbar-light {
   background-color: #f7f7f7;
   border-bottom: 1px solid #eee;
@@ -415,6 +416,8 @@ body.fullscreen-image-background .light-nav > li.active > a {
 .navbar.navbar-light .navbar-nav.nav-text-light > li.active > a {
   border-bottom-color: #646464;
 }
+
+*/
 
 .navbar-toggle {
   background-color: #646464;
