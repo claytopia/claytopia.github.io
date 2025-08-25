@@ -22,6 +22,12 @@ body {
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 3em;
+  }
+}
+
 div p:last-child {
     margin-bottom: 5rem !important; /* oder welcher Wert auch immer gewünscht ist */
 }
