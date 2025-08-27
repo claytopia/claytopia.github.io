@@ -4888,18 +4888,18 @@ img.mfp-img {
   font-weight: 300;
 }
 .hero-unit .hero-content .hero-text .hero-heading {
-  font-size: 12rem;
+    font-size: clamp(7rem, 14vw, 14rem);
 }
 
 
 @media screen and (max-width: 991px) {
   .hero-unit .hero-content .hero-text .hero-heading {
-    font-size: 8rem;
+    _font-size: 8rem;
   }
 }
 @media screen and (max-width: 768px) {
   .hero-unit .hero-content .hero-text .hero-heading {
-    font-size: 6rem;
+    _font-size: 6rem;
   }
 }
 .hero-unit .hero-content .hero-text p {
