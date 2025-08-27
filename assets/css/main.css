@@ -15,7 +15,7 @@ html, body {
 body {
 
   font-family: var(--haupt-font), sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 300;
   color: #777;
   background-color: #fff !important;
@@ -24,7 +24,7 @@ body {
 
 @media (max-width: 991px) {
   body {
-    font-size: 3.5em;
+    font-size_: 3rem;
   }
 }
 
@@ -67,12 +67,12 @@ body.fullscreen-image-background {
 
 
 h2 {
-  font-size: 2em;
+  font-size: 4rem;
 
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 4rem;
 }
 
 .logo-main {
@@ -362,7 +362,7 @@ h3 {
   padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #333333;
   font-weight: 700;
 }
@@ -541,11 +541,11 @@ a:hover, a:focus {
 
 
 .section-heading h2 {
-  font-size: 3em;
+  font-size: 6rem;
   color: #ffae3f;
 }
 .section-heading p {
-  font-size: 1.5em;
+  font-size: 3rem;
   color: #c2c2c2;
 }
 .section-heading hr {

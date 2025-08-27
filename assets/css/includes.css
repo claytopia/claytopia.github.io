@@ -4847,6 +4847,7 @@ img.mfp-img {
   background-image: url('../img/noise_lines_@2X.png?1342797527');
   background-repeat: repeat;
 }
+/*
 .hero-unit .hero-content {
   position: absolute;
   left: 0;
@@ -4855,6 +4856,20 @@ img.mfp-img {
   margin-top: -10em;
   z-index: 2;
 }
+*/
+
+
+.hero-unit .hero-content
+{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/*
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .hero-unit .hero-content {
     margin-top: -40px;
@@ -4865,24 +4880,26 @@ img.mfp-img {
     margin-top: -80px;
   }
 }
+
+ */
 .hero-unit .hero-content .hero-text .hero-heading,
 .hero-unit .hero-content .hero-text p {
   color: #DDDDDD;
   font-weight: 300;
 }
 .hero-unit .hero-content .hero-text .hero-heading {
-  font-size: 6em;
+  font-size: 12rem;
 }
 
 
 @media screen and (max-width: 991px) {
   .hero-unit .hero-content .hero-text .hero-heading {
-    font-size: 4em;
+    font-size: 8rem;
   }
 }
 @media screen and (max-width: 768px) {
   .hero-unit .hero-content .hero-text .hero-heading {
-    font-size: 3em;
+    font-size: 6rem;
   }
 }
 .hero-unit .hero-content .hero-text p {
