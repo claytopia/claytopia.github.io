@@ -403,6 +403,12 @@ body.fullscreen-image-background .light-nav > li > a {
     }
 }
 
+
+body:has(nav.in, nav.collapsing) .navbar-header {
+    background-color: #646464;
+}
+
+
 .navbar-nav.nav-text-light > li > a {
     color: #fff;
 }
