@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claytopia Flyer - Clay Club & Workshops</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A5;
+            margin: 0;
+        }
+
+        :root {
+            --main-bg-color: brown;
+            --heading-font: 'Open Sans';
+            --subheading-font: 'Borel';
+            --haupt-font: 'Open Sans';
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--haupt-font), sans-serif;
+            width: 148mm;
+            height: 210mm;
+            background-color: #fafafa;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.5" fill="%23f5f5f5" opacity="0.6"/><circle cx="3" cy="3" r="0.3" fill="%23e8e8e8" opacity="0.4"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            color: #777;
+            position: relative;
+            overflow: hidden;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .flyer-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding: 10mm;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 8mm;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-family: var(--heading-font), cursive;
+            font-weight: 300;
+            color: #ffae3f;
+            margin-bottom: 2mm;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            font-family: var(--subheading-font), cursive;
+            color: #c2c2c2;
+            margin-bottom: 5mm;
+        }
+
+        .main-title {
+            font-size: 22px;
+            font-family: var(--heading-font), cursive;
+            font-weight: 300;
+            color: #ffae3f;
+            text-align: center;
+            margin-bottom: 6mm;
+            background: #f5f5f5;
+            padding: 4mm;
+            border-radius: 0;
+            border-bottom: 1px solid #acacac;
+        }
+
+        .content-section {
+            margin-bottom: 5mm;
+        }
+
+        .content-section h3 {
+            font-size: 14px;
+            font-family: var(--subheading-font), cursive;
+            font-weight: 300;
+            color: #646464;
+            margin-bottom: 2mm;
+            margin-top: 0;
+        }
+
+        .content-section p, .content-section ul {
+            font-size: 10px;
+            line-height: 1.6;
+            margin-bottom: 3mm;
+            color: #777;
+        }
+
+        .content-section ul {
+            padding-left: 5mm;
+        }
+
+        .content-section li {
+            margin-bottom: 1mm;
+        }
+
+        .highlight-box {
+            background: #f5f5f5;
+            padding: 3mm;
+            border-radius: 0;
+            margin: 3mm 0;
+        }
+
+
+
+        .contact-footer .contact-item {
+            font-size: 9px;
+            margin-bottom: 1mm;
+            color: #fafafa;
+        }
+
+        .contact-footer .phone {
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .contact-footer .email {
+            color: #ffae3f;
+        }
+
+        .decoration {
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .decoration.top-left {
+            top: 5mm;
+            left: 5mm;
+            width: 15mm;
+            height: 15mm;
+            background: #ffae3f;
+            opacity: 0.1;
+            border-radius: 0;
+        }
+
+        .decoration.bottom-right {
+            bottom: 25mm;
+            right: 5mm;
+            width: 20mm;
+            height: 20mm;
+            background: #ffae3f;
+            opacity: 0.1;
+            border-radius: 0;
+        }
+
+        .contact-footer {
+            position: absolute;
+            bottom: 8mm;
+            left: 10mm;
+            right: 10mm;
+            background: #4d4d4d;
+            color: #fafafa;
+            padding: 3mm;
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .contact-info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .qr-code {
+            width: 18mm;
+            height: 18mm;
+            background: white;
+            padding: 1.5mm;
+            border-radius: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            margin-right: 10mm;
+            flex-shrink: 0;
+        }
+
+        .qr-code img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <div class="decoration top-left"></div>
+        <div class="decoration bottom-right"></div>
+        
+        
+        <div class="header">
+            <div class="logo">CLAYTOPIA TERMINE 2025</div>
+            <div class="subtitle">Töpfern & Keramik in Rösrath</div>
+        </div>
+<!--
+        <div class="main-title">
+            MEIN ANGEBOT
+            <hr style="display: inline-block; vertical-align: middle; width: 100px; border-top: 1px solid #acacac; margin: 5mm 0;" />
+        </div>
+-->
+        <div class="content-section">
+            <h3>Der Clay Club</h3>
+            <p>Jeden Dienstag und Donnerstag Abend, sowie Freitag Vormittag, öffne ich die Türen meines Ateliers für den Clay Club. In diesem freien Töpferangebot kannst du in kleiner, netter Runde deine eigenen Ideen, in deinem eigenen Tempo umsetzen.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Workshops</h3>
+            <p>Regelmäßig biete ich Workshops zu unterschiedlichen Themen an. Trage dich gerne in meinen Newsletter ein, um kein Event zu verpassen.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Töpferevents für Gruppen</h3>
+            <p>Du möchtest deinen Junggesell*Innenabschied mit einem Töpferworkshop zu einem unvergesslichen Erlebnis machen? Dein Kind wünscht sich ein kreatives Geburtstagsevent? Oder du und deine Freund*Innen wollt euch mit einem exklusiven Workshop einfach mal etwas Gutes tun?</p>
+            <p><strong>Dann schreib mir gerne – ich erstelle dir unverbindlich ein individuelles Angebot! Je nach Rahmenbedingungen können die Workshops auch außer Haus stattfinden.</strong></p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Keramik Brennservice</h3>
+            <p>Du töpferst gerne zuhause, hast aber keinen eigenen Brennofen? Dann nutze meinen Brennservice.</p>
+        </div>
+
+        <div class="contact-footer">
+            <div class="contact-info">
+                <div style="font-size: 14px; font-family: var(--heading-font), cursive; font-weight: 300; margin-bottom: 2mm; color: #ffae3f;">LUST AUF TÖPFERN?</div>
+                <div style="font-size: 11px; font-family: var(--subheading-font), cursive; margin-bottom: 2mm;">Komm in den Club!</div>
+                <div class="contact-item">Pia Kadasch</div>
+                <div class="contact-item phone">+49 171 833 6539</div>
+                <div class="contact-item email">hello@claytopia.de</div>
+                <div class="contact-item">Stöcker Weg 54, 51503 Rösrath</div>
+            </div>
+            <div class="qr-code">
+                <img src="src/assets/img/claytopiade-qrcode.png" alt="QR Code zur Homepage">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
