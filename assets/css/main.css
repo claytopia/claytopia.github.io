@@ -18,7 +18,7 @@ body {
     font-size: 2rem;
     font-weight: 300;
     color: #777;
-    background-color: #fff !important;
+    background-color: #fafafa !important;
     line-height: 1.6;
 }
 
@@ -463,15 +463,210 @@ body:has(nav.in, nav.collapsing) .navbar-header {
     .navbar-collapse .navbar-nav > li > a {
         color: #e6e6e6;
         border-bottom: none;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
     }
 
     .navbar-collapse .navbar-nav > li > a:hover {
         color: #fff;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-decoration: underline;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-collapse .navbar-nav > li.active > a {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.15);
+        text-decoration: underline;
+    }
+}
+
+/* NEUES MOBILE MENÜ */
+/* ------------------- */
+
+/* Desktop Navigation - versteckt auf mobil */
+.desktop-nav {
+    display: block;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 1199px) {
+    .desktop-nav {
+        display: none !important;
+    }
+    
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+    
+    .mobile-nav.menu-open {
+        background-color: #646464;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .mobile-nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: transparent;
+    }
+    
+    .mobile-logo {
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: 700;
+        font-family: var(--heading-font), cursive;
+        text-decoration: none;
+    }
+    
+    .mobile-logo:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .mobile-menu-toggle {
+        background-color: rgba(100, 100, 100, 0.9);
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-menu-toggle:hover {
+        background-color: rgba(100, 100, 100, 1);
+    }
+    
+    .hamburger-line {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        transform-origin: center;
+    }
+    
+    .mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #646464;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    
+    .mobile-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .mobile-menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .mobile-menu-list li {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .mobile-menu-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-link {
+        display: block;
+        color: #e6e6e6;
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding: 25px 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        text-align: left;
+        font-family: var(--heading-font), sans-serif;
+    }
+    
+    .mobile-menu-link:hover {
+        color: #fff;
+        background-color: rgba(255,255,255,0.1);
+        text-decoration: none;
+        padding-left: 40px;
+    }
+    
+    .mobile-menu-list li.active .mobile-menu-link {
+        color: #fff;
+        background-color: rgba(255,255,255,0.15);
+        border-left: 4px solid #ffae3f;
+    }
+    
+    /* Verhindert Scrollen wenn Menü offen ist */
+    body.mobile-menu-open {
+        overflow: hidden;
+    }
+    
+    /* Content Padding für fixierte Navigation */
+    body {
+        padding-top: 70px;
+    }
+}
+
+/* Zusätzliche Anpassungen für sehr kleine Bildschirme */
+@media screen and (max-width: 480px) {
+    .mobile-logo {
+        font-size: 2rem;
+    }
+    
+    .mobile-menu-link {
+        font-size: 2.8rem;
+        padding: 30px 25px;
+    }
+    
+    .mobile-menu-link:hover {
+        padding-left: 35px;
+    }
+    
+    .mobile-nav-header {
+        padding: 12px 15px;
     }
 }
 

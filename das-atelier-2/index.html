@@ -21,31 +21,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Borel&family=Monoton&display=swap" rel="stylesheet">
 </head>
-<body id="top" class="fullscreen-image-background">
+<body id="top" class="">
   <img src="https://via.placeholder.com/1" alt="" style="display:none;" />
-  <div class="navbar navbar-fixed-top">
+  <!-- Desktop Navigation -->
+  <div class="navbar navbar-fixed-top desktop-nav">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-          <span class="sr-only">Menu</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="index.html" class="navbar-brand"><h1 class="hide">Claytopia</h1></a>
+        <a href="/" class="navbar-brand"><h1 class="hide">Claytopia</h1></a>
       </div>
-      <nav class="navbar-collapse collapse " id="main-nav" role="navigation">
+      <nav role="navigation">
         <ul class="nav navbar-nav navbar-right ">
           <li class=""><a href="/">HOME</a></li>
-          
           <li class=""><a href="/clay-club">CLAY CLUB</a></li>
-         <!--
-          <li class=""><a href="/workshops">WORKSHOPS</a></li>
-         -->
           <li class=""><a href="/brennservice">BRENNSERVICE</a></li>
         </ul>
       </nav>
     </div>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-header">
+      <a href="/" class="mobile-logo"></a>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-list">
+        <li class="">
+          <a href="/" class="mobile-menu-link">HOME</a>
+        </li>
+        <li class="">
+          <a href="/clay-club" class="mobile-menu-link">CLAY CLUB</a>
+        </li>
+        <li class="">
+          <a href="/brennservice" class="mobile-menu-link">BRENNSERVICE</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 
   
@@ -124,6 +140,35 @@
 	<script src="/assets/js/plugins/flexslider/jquery.flexslider-min.js"></script>
 	<script src="/assets/js/plugins/magnific/jquery.magnific-popup.min.js"></script>
 	<script src="/assets/js/loop.js"></script>
+	
+	<!-- Mobile Menu JavaScript -->
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+		const mobileMenu = document.getElementById('mobileMenu');
+		const mobileNav = document.querySelector('.mobile-nav');
+		
+		if (mobileMenuToggle && mobileMenu && mobileNav) {
+			mobileMenuToggle.addEventListener('click', function() {
+				mobileMenuToggle.classList.toggle('active');
+				mobileMenu.classList.toggle('active');
+				mobileNav.classList.toggle('menu-open');
+				document.body.classList.toggle('mobile-menu-open');
+			});
+			
+			// Close menu when clicking on a link
+			const mobileMenuLinks = mobileMenu.querySelectorAll('.mobile-menu-link');
+			mobileMenuLinks.forEach(link => {
+				link.addEventListener('click', function() {
+					mobileMenuToggle.classList.remove('active');
+					mobileMenu.classList.remove('active');
+					mobileNav.classList.remove('menu-open');
+					document.body.classList.remove('mobile-menu-open');
+				});
+			});
+		}
+	});
+	</script>
 
 </body>
 </html>
