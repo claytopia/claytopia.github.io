@@ -20,4 +20,12 @@ npm run serve
 
 5. Verlinkung
 
-<a href="/der-clay-club">Clay Club</a>
+<a href="/brennservice">Brennservice</a>
+
+6. AI starten
+
+Im Terminal den Befehl
+
+claude
+
+eingeben

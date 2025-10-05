@@ -47,3 +47,8 @@ The site appears to focus on:
 - Contact information
 
 The recent commits indicate content updates removing "coming soon" messaging and adding pottery club/workshop content.
+
+## Content Rules 
+
+- always write CLAYTOPIA with the following casing: CLAYTOPIA
+- links to assets always have to start with a slash / e.g. /assets/img/image.png
