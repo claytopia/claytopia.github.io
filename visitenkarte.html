@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claytopia Visitenkarte</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: 87mm 57mm;
+            margin: 0;
+        }
+
+        :root {
+            --main-bg-color: brown;
+            --heading-font: 'Open Sans';
+            --subheading-font: 'Borel';
+            --haupt-font: 'Open Sans';
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--haupt-font), sans-serif;
+            width: 87mm;
+            height: 57mm;
+            background-color: #fafafa;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.5" fill="%23f5f5f5" opacity="0.6"/><circle cx="3" cy="3" r="0.3" fill="%23e8e8e8" opacity="0.4"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            color: #777;
+            position: relative;
+            overflow: hidden;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .card-container {
+            width: 85mm;
+            height: 55mm;
+            position: absolute;
+            top: 1mm;
+            left: 1mm;
+            padding: 3mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-family: var(--heading-font), cursive;
+            font-weight: 700;
+            color: #ffae3f;
+            margin-bottom: 1mm;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 8px;
+            font-family: var(--subheading-font), cursive;
+            color: #c2c2c2;
+            margin-bottom: 2mm;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-item {
+            font-size: 7px;
+            margin-bottom: 0.5mm;
+            color: #777;
+            line-height: 1.3;
+        }
+
+        .contact-item.name {
+            font-size: 9px;
+            font-weight: 700;
+            color: #4d4d4d;
+            margin-bottom: 1mm;
+        }
+
+        .contact-item.phone {
+            font-weight: bold;
+            font-size: 8px;
+            color: #4d4d4d;
+        }
+
+        .contact-item.email {
+            color: #ffae3f;
+            font-size: 8px;
+        }
+
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 3mm;
+        }
+
+        .qr-code {
+            width: 12mm;
+            height: 12mm;
+            background: white;
+            padding: 1mm;
+            border-radius: 1px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            margin-bottom: 1mm;
+        }
+
+        .qr-code img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .qr-label {
+            font-size: 5px;
+            color: #c2c2c2;
+            text-align: center;
+            font-family: var(--subheading-font), cursive;
+        }
+
+        .services {
+            font-size: 6px;
+            color: #777;
+            text-align: center;
+            margin-top: 1mm;
+            line-height: 1.2;
+        }
+
+        .decoration {
+            position: absolute;
+            opacity: 0.08;
+        }
+
+        .decoration.top-right {
+            top: 2mm;
+            right: 2mm;
+            width: 8mm;
+            height: 8mm;
+            background: #ffae3f;
+            border-radius: 0;
+        }
+
+        .decoration.bottom-left {
+            bottom: 2mm;
+            left: 2mm;
+            width: 6mm;
+            height: 6mm;
+            background: #ffae3f;
+            border-radius: 0;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="decoration top-right"></div>
+        <div class="decoration bottom-left"></div>
+        
+        <div class="header">
+            <div class="logo">CLAYTOPIA</div>
+            <div class="subtitle">Töpfern & Keramik in Rösrath</div>
+        </div>
+
+        <div class="main-content">
+            <div class="contact-info">
+                <div class="contact-item name">Pia Kadasch</div>
+                <div class="contact-item phone">+49 171 833 6539</div>
+                <div class="contact-item email">hello@claytopia.de</div>
+                <div class="contact-item">Stöcker Weg 54</div>
+                <div class="contact-item">51503 Rösrath</div>
+            </div>
+            
+            <div class="qr-section">
+                <div class="qr-code">
+                    <img src="src/assets/img/claytopiade-qrcode.png" alt="QR Code zur Homepage">
+                </div>
+                <div class="qr-label">claytopia.de</div>
+            </div>
+        </div>
+
+        <div class="services">
+            Clay Club • Workshops • Brennservice • Events
+        </div>
+    </div>
+</body>
+</html>
